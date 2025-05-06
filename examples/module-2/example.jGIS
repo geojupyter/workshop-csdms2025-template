@@ -1,0 +1,72 @@
+{
+  "layerTree": [
+    "b3c0de37-211f-4bda-a3dd-8ad4ec70337c",
+    "00dffaed-a480-4cd4-b615-06f9e9de27ef"
+  ],
+  "layers": {
+    "00dffaed-a480-4cd4-b615-06f9e9de27ef": {
+      "name": "Light basemap (reference)",
+      "parameters": {
+        "opacity": 1.0,
+        "source": "f489c230-b567-438f-8936-4a0a7a2abb9c"
+      },
+      "type": "RasterLayer",
+      "visible": true
+    },
+    "b3c0de37-211f-4bda-a3dd-8ad4ec70337c": {
+      "name": "Light basemap",
+      "parameters": {
+        "opacity": 1.0,
+        "source": "5189ade6-f690-467d-b398-58aa9cc9e218"
+      },
+      "type": "RasterLayer",
+      "visible": true
+    }
+  },
+  "metadata": {},
+  "options": {
+    "bearing": 0.0,
+    "extent": [
+      -14851129.214498293,
+      2758407.4871444046,
+      -7471096.444453202,
+      7443484.470375277
+    ],
+    "latitude": 41.59796817138346,
+    "longitude": -100.26198242500541,
+    "pitch": 0.0,
+    "projection": "EPSG:3857",
+    "zoom": 4.238665519405973
+  },
+  "schemaVersion": "0.5.0",
+  "sources": {
+    "5189ade6-f690-467d-b398-58aa9cc9e218": {
+      "name": "Light basemap Source",
+      "parameters": {
+        "attribution": "",
+        "bounds": [],
+        "htmlAttribution": "",
+        "interpolate": false,
+        "maxZoom": 24.0,
+        "minZoom": 0.0,
+        "provider": "",
+        "url": "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}.pbf"
+      },
+      "type": "RasterSource"
+    },
+    "f489c230-b567-438f-8936-4a0a7a2abb9c": {
+      "name": "Light basemap (reference) Source",
+      "parameters": {
+        "attribution": "",
+        "bounds": [],
+        "htmlAttribution": "",
+        "interpolate": false,
+        "maxZoom": 24.0,
+        "minZoom": 0.0,
+        "provider": "",
+        "url": "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}.pbf"
+      },
+      "type": "RasterSource"
+    }
+  }
+}
