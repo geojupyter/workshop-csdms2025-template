@@ -4,7 +4,7 @@
   ],
   "layers": {
     "e220d708-c851-4f54-b9ae-9c56c5e04480": {
-      "name": "Esri.WorldGrayCanvas Layer",
+      "name": "Basemap",
       "parameters": {
         "source": "8c8bb2c9-59a5-4962-9835-bd4eada4a4ce"
       },
