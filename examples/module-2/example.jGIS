@@ -1,23 +1,12 @@
 {
   "layerTree": [
-    "b3c0de37-211f-4bda-a3dd-8ad4ec70337c",
-    "00dffaed-a480-4cd4-b615-06f9e9de27ef"
+    "e220d708-c851-4f54-b9ae-9c56c5e04480"
   ],
   "layers": {
-    "00dffaed-a480-4cd4-b615-06f9e9de27ef": {
-      "name": "Light basemap (reference)",
+    "e220d708-c851-4f54-b9ae-9c56c5e04480": {
+      "name": "Esri.WorldGrayCanvas Layer",
       "parameters": {
-        "opacity": 1.0,
-        "source": "f489c230-b567-438f-8936-4a0a7a2abb9c"
-      },
-      "type": "RasterLayer",
-      "visible": true
-    },
-    "b3c0de37-211f-4bda-a3dd-8ad4ec70337c": {
-      "name": "Light basemap",
-      "parameters": {
-        "opacity": 1.0,
-        "source": "5189ade6-f690-467d-b398-58aa9cc9e218"
+        "source": "8c8bb2c9-59a5-4962-9835-bd4eada4a4ce"
       },
       "type": "RasterLayer",
       "visible": true
@@ -27,44 +16,30 @@
   "options": {
     "bearing": 0.0,
     "extent": [
-      -14851129.214498293,
-      2758407.4871444046,
-      -7471096.444453202,
-      7443484.470375277
+      -16943218.227214247,
+      1813884.940591243,
+      -5539788.477108987,
+      8661878.212775469
     ],
-    "latitude": 41.59796817138346,
-    "longitude": -100.26198242500541,
+    "latitude": 42.51130981651042,
+    "longitude": -100.98414277727615,
     "pitch": 0.0,
     "projection": "EPSG:3857",
-    "zoom": 4.238665519405973
+    "zoom": 4.3991367692285905
   },
   "schemaVersion": "0.5.0",
   "sources": {
-    "5189ade6-f690-467d-b398-58aa9cc9e218": {
-      "name": "Light basemap Source",
+    "8c8bb2c9-59a5-4962-9835-bd4eada4a4ce": {
+      "name": "Esri.WorldGrayCanvas",
       "parameters": {
-        "attribution": "",
-        "bounds": [],
-        "htmlAttribution": "",
-        "interpolate": false,
-        "maxZoom": 24.0,
+        "attribution": "Tiles (C) Esri -- Esri, DeLorme, NAVTEQ",
+        "maxZoom": 16.0,
         "minZoom": 0.0,
-        "provider": "",
-        "url": "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}.pbf"
-      },
-      "type": "RasterSource"
-    },
-    "f489c230-b567-438f-8936-4a0a7a2abb9c": {
-      "name": "Light basemap (reference) Source",
-      "parameters": {
-        "attribution": "",
-        "bounds": [],
-        "htmlAttribution": "",
-        "interpolate": false,
-        "maxZoom": 24.0,
-        "minZoom": 0.0,
-        "provider": "",
-        "url": "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}.pbf"
+        "provider": "Esri",
+        "url": "https://server.arcgisonline.com/ArcGIS/rest/services/{variant}/MapServer/tile/{z}/{y}/{x}",
+        "urlParameters": {
+          "variant": "Canvas/World_Light_Gray_Base"
+        }
       },
       "type": "RasterSource"
     }
