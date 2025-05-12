@@ -1,3 +1,4 @@
+name: "workshop-csdms2025-template"
 channels:
   - "conda-forge"
   - "nodefaults"
