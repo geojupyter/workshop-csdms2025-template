@@ -12,6 +12,13 @@ concurrency:
   cancel-in-progress: true
 
 
+# Default to bash in login mode
+# https://github.com/mamba-org/provision-with-micromamba#IMPORTANT
+defaults:
+  run:
+    shell: "bash -l {0}"
+
+
 jobs:
   build:
     runs-on: "ubuntu-latest"
@@ -19,13 +26,15 @@ jobs:
       - name: "Checkout"
         uses: "actions/checkout@v4"
 
-      - uses: "prefix-dev/setup-pixi@v0.8.1"
+      - name: "Install Conda environment"
+        uses: "mamba-org/setup-micromamba@v2"
         with:
-          manifest-path: "examples/module-3/my-website/pixi.toml"
+          environment-file: "examples/module-3/my-website/environment.yml"
+          cache-environment: true
 
       - run: |
           cd examples/module-3/my-website
-          pixi run render
+          myst build --html
         env:
           BASE_URL: "/${{ github.event.repository.name }}"
 
