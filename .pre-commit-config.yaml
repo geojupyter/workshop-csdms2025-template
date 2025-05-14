@@ -25,3 +25,12 @@ repos:
       - id: mixed-line-ending
       # - id: no-commit-to-branch # protects `main` by default
       - id: trailing-whitespace
+
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.8.1
+    hooks:
+      - id: nbstripout
+        exclude: |
+          (?x)^(
+              examples/module-3/my-website/example.ipynb
+          )$
